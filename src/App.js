@@ -8,21 +8,21 @@ class App extends Component{
     this.state = { usuario: "Jorge Eduardo Barbosa" };
   }
 
-  onChangeUsuario = (novoUsuario) => {
+  onChangeUsuario = (AUsuario) => {
     this.setState({
-      usuario: novoUsuario
+      usuario: AUsuario
     });
   }
 
   render() {
     return (
-      <section>
+      <div>
         <center>
           <h1>Tecnologias Front-end</h1>
           <UsuarioEntrada usuario={ this.state.usuario } onChangeUsuario={ this.onChangeUsuario }  />                 
           <UsuarioSaida usuario={ this.state.usuario }/>
         </center>
-      </section>      
+      </div>      
     ); 
   };
 }
