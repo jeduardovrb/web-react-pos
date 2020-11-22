@@ -5,12 +5,12 @@ import UsuarioSaida from "./UsuarioSaida";
 class App extends Component{
   constructor(props) {
     super(props);
-    this.state = { usuario: "Jorge Eduardo Barbosa" };
+    this.state = { usuario_aluno: "Jorge Eduardo Barbosa" };
   }
 
   onChangeUsuario = (AUsuario) => {
     this.setState({
-      usuario: AUsuario
+      usuario_aluno: AUsuario
     });
   }
 
@@ -19,8 +19,8 @@ class App extends Component{
       <div>
         <center>
           <h1>Tecnologias Front-end</h1>
-          <UsuarioEntrada usuario={ this.state.usuario } onChangeUsuario={ this.onChangeUsuario }  />                 
-          <UsuarioSaida usuario={ this.state.usuario }/>
+          <UsuarioEntrada usuario_aluno={ this.state.usuario_aluno } onChangeUsuario={ this.onChangeUsuario }  />                 
+          <UsuarioSaida usuario_aluno={ this.state.usuario_aluno }/>
         </center>
       </div>      
     ); 
